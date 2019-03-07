@@ -23,6 +23,10 @@ case "$chain" in
     export ETHERSCAN_API_URL=https://api-$chain.etherscan.io/api
     export ETHERSCAN_URL=https://$chain.etherscan.io/address
     ;;
+  goerli)
+    export ETHERSCAN_API_URL=https://api-$chain.etherscan.io/api
+    export ETHERSCAN_URL=https://$chain.etherscan.io/address
+    ;;
   *)
     echo >&2 "Verification only works on mainnet, ropsten, kovan and rinkeby."
     exit 1
